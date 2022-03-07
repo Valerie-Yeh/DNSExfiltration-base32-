@@ -1,4 +1,4 @@
-# DNSExfiltration-base32-
+# Detection on DNS-Based Data Exfiltration
 We aim to establish a real-time mechanism for detection on DNS-based data exfiltration. Our contribution is to develop a real-time DNS-based data exfiltration detection model, and we reinforce the capability of anomaly detection of our trained machine learning model with three different types of encoding methods, they are base32, base64 and hexadecimal encode after compression respectively.
 ## Attack and Data Collection
 The organization, **APT34**, used Excel file with malicious macro embedded to download a BAT file and exfiltrated the result of the BAT script to their C2 server. The following operations are our reproduction of the attack.
