@@ -1,4 +1,3 @@
-'Here, %PUBLIC% are the user directory under disk C 
 Function SaveBinaryData(FileName, Data)
     Const adTypeText = 1
     Const adSaveCreateOverWrite = 2
