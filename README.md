@@ -13,7 +13,7 @@ The PowerShell script **dns.ps1** is used for this purpose. This script performs
 2. The script then quits, to be invoked again upon running the next scheduled task.
 ## Data Source and Attributes Extraction
 A. Dataset
-At the phase of data exfiltration over DNS, we encode the text file containing the results of the BAT script in three different ways, they are base64 encode, base32 encode, and hexadecimal encode after compression respectively. We then upload the three datasets to the C2 server and observe the logs on ELK, **Your own Kibana%**, simultaneously.
+At the phase of data exfiltration over DNS, we encode the text file containing the results of the BAT script in three different ways, they are base64 encode, base32 encode, and hexadecimal encode after compression respectively. We then upload the three datasets to the C2 server and observe the logs on ELK, **%Your own Kibana%**, simultaneously.
 B. Query Name Attributes Engineering
 The main achievement in this section is to identify that the eight attributes have strong predictive power in determining whether the query name is normal or malicious. The attributes include: (1) total count of characters in query name, (2) count of characters in subdomain, (3) count of uppercase characters, (4) count of numerical characters, (5) entropy, (6) number of labels, (7) maximum label length, and (8) average label length.
 ## Evaluation
